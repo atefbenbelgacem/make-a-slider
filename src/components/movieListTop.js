@@ -1,16 +1,16 @@
 import React from "react";
 
-const MovieList = (props) => {
+const MovieListTop = (props) => {
   return (
     <>
       {props.movies.map((movie, index) => {
         return (
           <div
-            className="image-container d-flex justify-content-start m-3"
+            className="m-2"
             key={index}
           >
             <img src={movie.Poster} alt="movie"></img>
-            <div className="overlay d-flaex justify-content-center align-items-center">
+            <div className="d-flaex justify-content-center align-items-center">
               <span>{movie.Title}</span>
             </div>
           </div>
@@ -20,4 +20,4 @@ const MovieList = (props) => {
   );
 };
 
-export default MovieList;
+export default MovieListTop;
